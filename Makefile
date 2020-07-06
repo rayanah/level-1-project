@@ -1,18 +1,19 @@
 .ONESHELL:
 SHELL = /bin/bash
 
-build: build-level1project-components build-level1project-tools
+build: build-level-1-project-components build-level-1-project-tools
 
 petclinic: pull up
 
-build-level1project-components:
+build-level-1-project-components:
 	DOCKER_BUILDKIT=1 docker-compose build
 
-build-level1project-tools:
+build-level-1-project-tools:
 	DOCKER_BUILDKIT=1 docker build --tag rayanah/level-1-project .
 
 pull:
-	docker pull rayanah/department-server
+	docker pull rayanah/level-1-project
+	docker pull rayanah/department-service
 	docker pull rayanah/office-service
 	docker pull rayanah/person-service
 	docker pull rayanah/role-service

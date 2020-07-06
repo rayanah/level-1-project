@@ -2,7 +2,7 @@ build:
 	docker build --build-arg rebuild=$$RANDOM --tag rayanah/office-server .
 
 run:
-	docker run -it --rm --name office-server -p 8080:80 -d rayanah/office-server 
+	docker run -it --rm --name office-server -p 8084:80 -d rayanah/office-server 
 
 debug:
 	docker exec -it office-server sh
