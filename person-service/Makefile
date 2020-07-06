@@ -2,7 +2,7 @@ build:
 	docker build --build-arg rebuild=$$RANDOM --tag rayanah/person-service .
 
 run:
-	docker run -it --rm --name person-service -p 8081:8081 -d rayanah/person-service 
+	docker run -it --rm --name person-service -p 8081:80 -d rayanah/person-service 
 
 debug:
 	docker exec -it person-service sh
