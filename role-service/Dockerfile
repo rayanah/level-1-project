@@ -1,6 +1,6 @@
 FROM maven
 
-COPY ./role-service
+COPY . /role-service
 
 WORKDIR /role-service
 

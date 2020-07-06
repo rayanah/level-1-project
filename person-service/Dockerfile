@@ -1,6 +1,6 @@
 FROM maven
 
-COPY ./people-service
+COPY . /people-service
 
 WORKDIR /people-service
 

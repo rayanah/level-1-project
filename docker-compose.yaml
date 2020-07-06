@@ -1,40 +1,35 @@
-version: 'version: '1.0.0'
+version: '3.8'
 services:
-  department-server:
+    department-server:
     container_name: department-server
     image: rayanah/department-server
     build: ./department-server
-    port:
-            - "8083:80"
+    ports:   - "8083:80"
 
   office-service:
     container_name: office-service
     image: rayanah/office-service
     build: ./office-service
-    port:
+    ports:
             - "8084:80"
   
   person-service:
     container_name: person-service
     image: rayanah/person-service
     build: ./person-service
-    port:   
+    ports:   
             - "8081:80"
 
   role-service:
     container_name: role-service
     image: rayanah/role-service
     build: ./role-service
-    port:
+    ports:
             - "8082:80"
 
   project-assessment-site:
     container_name: project-assessment-site
     image: rayanah/project-assessment-site
     build: ./project-assessment-site
-    port:
-            - "80:80"
-~                                                                                  
-~                                                                                  
-~                                                                                  
-~            
+    ports:
+            - "80:80"            
