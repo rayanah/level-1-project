@@ -20,10 +20,8 @@ pull:
 	docker pull rayanah/project-assessment-site
 
 run:
-	docker run -it --rm -v /var/run/docker.sock:/var/run/docker.sock rayanah/level-1-project
+	docker run -it --rm rayanah/level-1-project
 
-cbuild:
-	docker run -it --rm -v /var/run/docker.sock:/var/run/docker.sock rayanah/level-1-project build
 
 up:
 	docker-compose up -d
