@@ -1,8 +1,8 @@
 FROM maven
 
-COPY . /people-service
+COPY . /person-service
 
-WORKDIR /people-service
+WORKDIR /person-service
 
 RUN mvn clean package && ls target
 
