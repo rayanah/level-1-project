@@ -1,0 +1,10 @@
+#!/bin/bash
+
+curl -L get.docker.com | sh && \
+sudo apt install -y git make vim jq && \
+apt-get install git-flow && \
+sudo curl -L https://github.com/docker/compose/releases/download/1.26.2/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose && \
+sudo chmod +x /usr/local/bin/docker-compose && \ 
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)" && \
+chmod 400 tua-3.pem && \
+ssh -i "tua-3.pem" ubuntu@ec2-15-185-80-228.me-south-1.compute.amazonaws.com 
