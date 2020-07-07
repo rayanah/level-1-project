@@ -3,7 +3,7 @@ SHELL = /bin/bash
 
 build: build-level-1-project-components build-level-1-project-tools
 
-petclinic: pull up
+level-1-project: pull up
 
 build-level-1-project-components:
 	DOCKER_BUILDKIT=1 docker-compose build
