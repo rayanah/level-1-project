@@ -9,7 +9,7 @@ build-level-1-project-components:
 	DOCKER_BUILDKIT=1 docker-compose build
 
 build-level-1-project-tools:
-	DOCKER_BUILDKIT=1 docker build --tag rayanah/level-1-project .
+	docker build --tag rayanah/level-1-project .
 
 pull:
 	docker pull rayanah/level-1-project
