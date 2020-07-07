@@ -1,12 +1,6 @@
 
 version: '3.8'
 services:
-  department-service:
-    container_name: department-service
-    image: rayanah/department-service
-    build: ./department-service
-    ports:  
-            - "8083:80"
 
   department-service:
     container_name: department-service
