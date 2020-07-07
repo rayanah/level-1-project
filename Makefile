@@ -32,7 +32,7 @@ down:
 	docker-compose down
 
 clean:
-	docker rm -f $(docker ps -qa)
+	docker rm -f $$(docker ps -qa)
 
 logs:
 	docker-compose logs -f
