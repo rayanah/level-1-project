@@ -1,0 +1,15 @@
+{
+  "summary": {
+    "title": "level 1 threats"
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "title": "leve1 project",
+        "thumbnail": "./public/content/images/thumbnail.jpg",
+        "id": 0
+      }
+    ]
+  }
+}
