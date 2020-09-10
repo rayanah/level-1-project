@@ -1,0 +1,15 @@
+{
+  "summary": {
+    "title": "sock project"
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "title": "sock threat",
+        "thumbnail": "./public/content/images/thumbnail.jpg",
+        "id": 0
+      }
+    ]
+  }
+}
